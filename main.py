@@ -7,10 +7,10 @@ def main():
     sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'srcs'))
 
     # Importar y ejecutar las funciones de activación
-    from activation_functions.relu import plot_relu
-    from activation_functions.sigmoid import plot_sigmoid
-    from activation_functions.tanh import plot_tanh
-    from activation_functions.leaky_relu import plot_leaky_relu
+    from activation_functions.relu import relu
+    from activation_functions.sigmoid import sigmoid
+    from activation_functions.tanh import tanh
+    from activation_functions.leaky_relu import leaky_relu
 
     funciones = [plot_relu, plot_sigmoid, plot_tanh, plot_leaky_relu]
     for func in funciones:
